@@ -1,4 +1,4 @@
-# final year projet
+# final year project
 
 
 # Members
@@ -9,7 +9,7 @@
 
 # NS Mzobe
 
-# ML Phiri
+# MI Phiri
 
 # BN Hlophe
 
