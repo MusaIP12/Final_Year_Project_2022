@@ -1,0 +1,33 @@
+.career {
+    background-color: aliceblue;
+    background-position: top center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 100%;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 1%;
+    border: 1cm;
+    
+}
+
+.text {
+    align-items: center;
+    border: 15px;
+    align-content: center;
+    justify-content: center;
+}
+
+
+a {
+    border: none;
+    color: #6f21a3;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #8b7da8;
+  }
+
