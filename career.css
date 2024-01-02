@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+nav{
+    position: relative;
+    padding: 2% 6%;
+    top: 0;
+    display: flex;
+    flex: 1;
+    background: -moz-linear-gradient(left,red,rgb(111, 20, 79),purple,blue);
+    background: -webkit-linear-gradient(left,red,rgb(157, 29, 73),purple,blue);
+    justify-content: space-between;
+    text-align: left;
+}
+
+.logo{
+    padding: 8px 12px;
+}
+
+.logo a{
+    font-style: oblique;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 100%;
+    color: white;
+}
+
+.nav fa{
+    display: none;
+}
+
+.nav fa{
+    display: none;
+}
+
+.nave-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.nave-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-style: oblique;
+    font-weight: 700;
+
+}
+
+.nave-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nave-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width:1000px){
+    nav{
+        width: 88%;
+    }
+}
+
+@media(max-width: 800px) {
+    .nave-links ul li{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        
+    }
+
+
+    .nave-links{
+        position: fixed;
+        background: rgb(0, 0, 0);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    
+    nav .fa{
+        display: block;
+        cursor: pointer;
+        font-size: 22px;
+        margin: 10px;
+        color: aqua;
+    }
+
+    .nave-links ul {
+        padding: 30px;
+    }
+
+}
+
+
+/*-----------------------------footer--------------------------------------------------------------------*/
+.footers{
+    padding-top: 20px;
+}
+#pic{
+    background-image: url(background/img_footer.svg);
+    display: flex;
+    height: 64px;
+    overflow: hidden;
+    width: 100%;
+}
+.footers p{
+    text-align: center;
+    font-size: 51px;
+    font-family: 'League Gothic', sans-serif;
+    text-shadow: 5px 2px 8px black;
+    color: white;
+    padding-bottom: 40px;
+}
+footer{
+    background-color: rgb(123, 222, 255);
+
+}
+
+footer ul{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    color: black;
+    text-align: center;
+}
+
+.social a{
+    font-size: 24px;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.list{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+#names{
+    padding-bottom: 20px;
+}
+
+@media(max-width: 800px){
+    .footers p{
+        font-size: 30px;
+    }
+}
+
+/*------------------------------------------- careeriers-----------------------------------------------------*/
+.careeriers{
+    background-image: linear-gradient(rgba(24, 33, 68, 0.7),rgba(41, 48, 78, 0.7));
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+}
+
+.block-list{
+    padding-top: 55px;
+    padding-bottom: 25px;
+}
+
+.block-list h1{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'League Gothic', sans-serif;
+    text-shadow: 5px 2px 8px black;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.block-list p{
+
+    font-size: 20px;
+}
+.block-list ol{
+    margin: 0 80px 0;
+    list-style-type: circle;
+}
+
+
+.career{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.career h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: azure;
+}
+
+p{
+    color: black;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    text-align: left;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.career-col{
+
+    flex-basis: 45%;
+    background: #d1c2c2;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-right: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.careerr{
+    padding-bottom: 150px;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    width: 85vmin; /* Add your preferred size here */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.wrapper img{
+    width: 100%;
+}
+
+.top a{
+    text-decoration: none;
+    color: #6f21a3;
+    display: inline-block;
+    border: 1px solid #ffff;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 12px 34px;
+    position: relative;
+    background: transparent;
+    transition: 0.3s;
+
+}
+
+.top a:hover{
+    background-color: red;
+    border: 1px solid red;
+    
+}
+
+
+@media(max-width: 800px){
+    .row{
+        flex-direction: column;
+    }
+
+    .careerr{
+        background-size: auto;
+    }
+
+    .wrapper{
+        width: 100%;
+    }
+
+    .career-col p{
+        height: 25em;
+        overflow-y: scroll;
+    }
+    .admindiv{
+        padding-top: -25px;
+    }
+}

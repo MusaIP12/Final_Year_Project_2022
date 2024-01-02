@@ -1,0 +1,106 @@
+:root{
+    --font-color:#555;
+    --font-hover-color:rgb(238, 145, 38);
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:"Raleway", sans-serif;
+    background-image:url(images/image3.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width:320px;
+    border:2px solid #161515da;
+    border-radius: 10px;
+    padding:2em;
+    background-color:rgba(207, 201, 201, 0.788);
+}
+.form-group{
+    margin-bottom:1.5em;
+    transition:all .3s;
+}
+.form-label{
+    font-size:.75em;
+    color:var(--font-color);
+    display:block;
+    opacity:0;
+    transition: all .3s;
+    transform:translateX(-50px);
+}
+.form-control{
+    box-shadow:none;
+    border-radius:0;
+    border-color:#ccc;
+    border-style:none none solid none;
+    width:100%;
+    font-size:1.25em;
+    transition:all .6s;
+}
+
+
+.form-control::placeholder{
+    color:#aaa;
+}
+.form-control input:focus{
+    outline: 0;
+}
+.form-control:focus{
+    box-shadow:none;
+    border-color:var(--font-hover-color);
+    outline:none;
+}
+.form-group:focus-within{
+    transform:scale(1.1,1.1);
+}
+
+.form-control:invalid:focus{
+    border-color:red;
+}
+.form-control:valid:focus{
+    border-color:green;
+}
+
+.btn{
+    background: 0 0 rgb(238, 9, 9);
+    border:1px solid rgb(14, 13, 13);
+    border-radius:3px;
+    color:white;
+    font-size:1em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:10 50px;
+    text-transform:uppercase;
+}
+.btn:hover{
+    border-color:var(--font-hover-color);
+    color:var(--font-hover-color);
+}
+textarea{
+    resize:none;
+}
+
+
+
+.focused > .form-label{
+    opacity:1;
+    transform:translateX(0px);
+
+}
+
+a{
+    color: red;
+}
+
+h2{
+    color: red;
+    font-size: 15px;
+}
+
+h3{
+    color: red;
+}
