@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
+
+nav{
+    position: relative;
+    padding: 2% 6%;
+    top: 0;
+    display: flex;
+    flex: 1;
+    background: -moz-linear-gradient(left,red,rgb(111, 20, 79),purple,blue);
+    background: -webkit-linear-gradient(left,red,rgb(157, 29, 73),purple,blue);
+    justify-content: space-between;
+    text-align: left;
+}
+
+.logo{
+    padding: 8px 12px;
+}
+
+.logo a{
+    font-style: oblique;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 100%;
+    color: white;
+}
+
+.nav fa{
+    display: none;
+}
+
+.nav fa{
+    display: none;
+}
+
+.nave-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+.nave-links ul li a{
+    text-decoration: none;
+    color: white;
+    font-style: oblique;
+    font-weight: 700;
+
+}
+
+.nave-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nave-links ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width:1000px){
+    nav{
+        width: 88%;
+    }
+}
+
+@media(max-width: 800px) {
+    .nave-links ul li{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        
+    }
+
+
+    .nave-links{
+        position: fixed;
+        background: rgb(0, 0, 0);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -300px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    
+    nav .fa{
+        display: block;
+        cursor: pointer;
+        font-size: 22px;
+        margin: 10px;
+        color: aqua;
+    }
+
+    .nave-links ul {
+        padding: 30px;
+    }
+
+}
+
+
+/*-----------------------------footer--------------------------------------------------------------------*/
+.footers{
+    padding-top: 20px;
+}
+#pic{
+    background-image: url(background/img_footer.svg);
+    display: flex;
+    height: 64px;
+    overflow: hidden;
+    width: 100%;
+}
+.footers p{
+    text-align: center;
+    font-size: 51px;
+    font-family: 'League Gothic', sans-serif;
+    text-shadow: 5px 2px 8px black;
+    color: white;
+    padding-bottom: 40px;
+}
+footer{
+    background-color: rgb(123, 222, 255);
+
+}
+
+footer ul{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    color: black;
+    text-align: center;
+}
+
+.social a{
+    font-size: 24px;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.list{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+#names{
+    padding-bottom: 20px;
+}
+
+@media(max-width: 800px){
+    .footers p{
+        font-size: 30px;
+    }
+}
+
+/*******************career**********************/
+.career {
+
+    background-color: aliceblue;
+    background-position: top center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 1%;
+    border: 1cm;
+    
+}
+
+.career h1{
+    font-size: 36px;
+    font-weight: 600;
+    margin: 10px;
+    text-align: center;
+}
+
+.text {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.text ol{
+    text-align: left;
+}
+
+.text h2{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.text .top{
+    padding: 9px;
+}
+#description p{
+    margin: 12px;
+}
+
+a {
+    border: none;
+    color: #6f21a3;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #8b7da8;
+}
+
+@media(max-width: 800px){
+    .career {
+        padding-top: 70px;
+    }
+}
+
+.top a{
+    text-decoration: none;
+    color: #6f21a3;
+    display: inline-block;
+    border: 1px solid #ffff;
+    font-size: 13px;
+    cursor: pointer;
+    padding: 12px 34px;
+    position: relative;
+    background: transparent;
+    transition: 0.5s;
+
+}
+
+.top a:hover{
+    background-color: red;
+    border: 1px solid red;
+}
